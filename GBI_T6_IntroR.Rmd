@@ -17,20 +17,28 @@ output:
       smooth_scrool: yes
 ---
 ## TAREA 1: TIPOS DE DATOS
-## 1. Identificador "ciudad"
+# 1. Identificador "ciudad"
 Asigno la varible cuidad y la imprimo
 ```{r 1}
 ciudad <- "Tena"
 print (ciudad)
 ```
-#  2. Identificador "pais_andes"
+# 2. Identificador "pais_andes"
 Crear un identificador de nombre "pais_andes" y se asigna como valor los nombres de los países que son atravesados por la cordillera de los andes
 ```{r 2}
 pais_andes <- c("Argentina", "Bolivia", "Chile", "Colombia", "Ecuador", "Perú", "Venezuela")
 print(pais_andes)
 ```
+## 3. Dataframe
+Se crea un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter y logico)
 
-
+```{r 3}
+poblacion_países_america <- data.frame(identador = seq(1:12), 
+                                norte_sur = as.factor(c(rep(0, 10), 1, 1)), 
+                                países = c("Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Ecuador", "Guyana", "Paraguay", "Perú", "Surinam", "USA", "Mexico"),
+                                poblacion = c(45.38, 11.67, 212.6, 19.12, 50.88, 17.64, 0.79,  32.97, 0.59, 329.5, 128.9, 125)) #millones
+print(poblacion_países_america)
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
