@@ -36,7 +36,7 @@ Se crea un dataframe con 12 eventos (files) y 5 variables (columnas), cada colum
 poblacion_países_america <- data.frame(identador = seq(1:12), 
                                 norte_sur = as.factor(c(rep(0, 10), 1, 1)), 
                                 países = c("Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Ecuador", "Guyana", "Paraguay", "Perú", "Surinam", "USA", "Mexico"),
-                                poblacion = c(45.38, 11.67, 212.6, 19.12, 50.88, 17.64, 0.79,  32.97, 0.59, 329.5, 128.9, 125)) #millones
+                                poblacion = c(45.38, 11.67, 212.6, 19.12, 50.88, 17.64, 0.79,  7.13, 32.97, 0.58, 329.5, 128.9)) #MILLONES
 print(poblacion_países_america)
 ```
 # 4. Dataset
