@@ -18,14 +18,19 @@ output:
 ---
 ## TAREA 1: TIPOS DE DATOS
 ## 1. Identificador "ciudad"
-Crear un identificador nombre "ciudad" y asigne como valor el nombre de alguna ciudad
+Asigno la varible cuidad y la imprimo
 ```{r 1}
 ciudad <- "Tena"
 print (ciudad)
 ```
+#  2. Identificador "pais_andes"
+Crear un identificador de nombre "pais_andes" y se asigna como valor los nombres de los países que son atravesados por la cordillera de los andes
+```{r 2}
+pais_andes <- c("Argentina", "Bolivia", "Chile", "Colombia", "Ecuador", "Perú", "Venezuela")
+print(pais_andes)
 ```
 
-```
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
